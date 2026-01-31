@@ -1,0 +1,17 @@
+{
+  "name": "cyber-omelette",
+  "version": "1.0.0",
+  "description": "The Cyber Omelette blog",
+  "type": "module",
+  "scripts": {
+    "convert": "node scripts/convert.js",
+    "build": "node scripts/build.js",
+    "all": "npm run convert && npm run build",
+    "serve": "npx serve site"
+  },
+  "dependencies": {
+    "xml2js": "^0.6.2",
+    "turndown": "^7.1.2",
+    "marked": "^11.1.1"
+  }
+}
