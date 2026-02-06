@@ -98,6 +98,8 @@ function buildSidebar(posts, categoryPosts, currentPage = '') {
   `;
 }
 
+const CLOUDFLARE_ANALYTICS = `<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "24c85676d97c4530a0f84604f287e9da"}'></script><!-- End Cloudflare Web Analytics -->`;
+
 function headerHtml(currentPage = '') {
   return `
     <header class="site-header">
@@ -148,6 +150,7 @@ function postTemplate(post, categoryPosts) {
       </footer>
     </main>
   </div>
+${CLOUDFLARE_ANALYTICS}
 </body>
 </html>`;
 }
@@ -184,6 +187,7 @@ function indexTemplate(posts, categoryPosts) {
   <footer class="site-footer">
     <p>Built with markdown and a bit of scripting</p>
   </footer>
+${CLOUDFLARE_ANALYTICS}
 </body>
 </html>`;
 }
@@ -219,6 +223,7 @@ function tagPageTemplate(tag, posts, categoryPosts) {
       </footer>
     </main>
   </div>
+${CLOUDFLARE_ANALYTICS}
 </body>
 </html>`;
 }
@@ -245,6 +250,7 @@ function aboutTemplate(aboutHtml, categoryPosts) {
       </article>
     </main>
   </div>
+${CLOUDFLARE_ANALYTICS}
 </body>
 </html>`;
 }
