@@ -354,6 +354,13 @@ async function main() {
   copyFileSync(join(ROOT, 'style.css'), join(SITE_DIR, 'style.css'));
   console.log('  ✓ style.css');
 
+  // Copy CNAME for custom domain
+  const cnamePath = join(ROOT, 'CNAME');
+  if (existsSync(cnamePath)) {
+    copyFileSync(cnamePath, join(SITE_DIR, 'CNAME'));
+    console.log('  ✓ CNAME');
+  }
+
   console.log(`\nSite built to ${SITE_DIR}`);
   console.log(`Generated ${tagMap.size} tag pages`);
 }
