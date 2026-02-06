@@ -28,4 +28,4 @@ You've got to break a few eggs to make an omelette, and that's basically how I b
 
 ## Get In Touch
 
-If you want to chat about any of these projects or have questions, find me on GitHub or drop a comment on any post.
+If you want to chat about any of these projects or have questions, find me on [GitHub](https://github.com/benrules2) or drop a comment on any post.
