@@ -70,9 +70,9 @@ This post began as an exploration into history. When reading John Backus' reflec
 
 He states:
 
-> *The programmer had to be a resourceful inventor to adapt his problem to the idiosyncrasies of the computer*
+> *The programmer had to be a resourceful inventor to adapt his problem to the idiosyncrasies of the computer... he had to employ every trick he could think of to make a program run at a speed that would justify the large cost of running it. And he had to do all of this by his own ingenuity.*
 
-When first reading this quote, I realized I am a part of the modern Priesthood. Seventy years later, this is exactly how I think of (some) programming. But history shows this is wrong - even the sharpest skills *will* be made obsolete. Yet the need for niche expertise to push computation to its limits will remain. What changes is the problems they will be solving.
+When first reading this quote, I realized I am a part of the modern Priesthood. Seventy years later, it still fits how I and others think of our craft. But history shows even the sharpest skills *will* be made obsolete; the need for niche expertise to push computation to its limits will remain. What changes is the problems they will be solving.
 
 There's a saying in cycling - "It never gets easier, you just go faster." Perhaps with knowledge work, it doesn't get easier, the systems just get more complex. Before FORTRAN, crude election forecasts and tracking a handful of aircraft were state of the art. The next 50 years brought weather forecasting, universe-scale simulations, and the codification of the human genome. This wildly exceeded anyone's imagination at the dawn of the compiler era.
 
