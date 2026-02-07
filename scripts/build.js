@@ -129,6 +129,7 @@ function postTemplate(post, categoryPosts) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${post.title} - The Cyber Omelette</title>
   <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
 </head>
 <body>
   ${headerHtml('../')}
@@ -172,6 +173,7 @@ function indexTemplate(posts, categoryPosts) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Cyber Omelette</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
   ${headerHtml('')}
@@ -208,6 +210,7 @@ function tagPageTemplate(tag, posts, categoryPosts) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${tag} - The Cyber Omelette</title>
   <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
 </head>
 <body>
   ${headerHtml('../')}
@@ -236,6 +239,7 @@ function aboutTemplate(aboutHtml, categoryPosts) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - The Cyber Omelette</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
   ${headerHtml('')}
@@ -359,6 +363,13 @@ async function main() {
 
   copyFileSync(join(ROOT, 'style.css'), join(SITE_DIR, 'style.css'));
   console.log('  ✓ style.css');
+
+  // Copy favicon
+  const faviconPath = join(ROOT, 'favicon.ico');
+  if (existsSync(faviconPath)) {
+    copyFileSync(faviconPath, join(SITE_DIR, 'favicon.ico'));
+    console.log('  ✓ favicon.ico');
+  }
 
   // Copy CNAME for custom domain
   const cnamePath = join(ROOT, 'CNAME');
