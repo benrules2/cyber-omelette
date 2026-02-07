@@ -20,8 +20,6 @@ My projects tend to fall into a few categories:
 
 **Astrophotography:** After seeing incredible photos of the Milky Way, I built my own [barn door tracker](/posts/manual-barn-door-tracker.html) for under $50 to take long-exposure shots without star trails.
 
-**Vision Tech:** One project I'm proud of is [The All-Seeing Pi](/posts/all-seeing-pi.html), a vision enhancement platform I built with my friend Dan, who is blind. It's a wearable video system designed to maximize limited sight.
-
 ## Why "Cyber Omelette"?
 
 You've got to break a few eggs to make an omelette, and that's basically how I build things. Trial and error, broken parts, learning as I go. And like an omelette, this blog is just a mix of whatever ingredients I'm working with at the moment: code, hardware, woodworking, coffee, whatever.
