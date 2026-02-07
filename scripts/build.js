@@ -20,7 +20,8 @@ const CATEGORIES = {
   'Python': ['python'],
   'Astrophotography': ['astrophotography', 'barn door', 'stars'],
   'Coffee': ['coffee', 'espresso', 'aeropress', 'gaggia'],
-  'Laser & 3D': ['laser', '3d print', 'laser cut'],
+  'Laser & 3D': ['laser cut', 'laser', '3d print'],
+  'Opinion': ['opinion'],
 };
 
 function parseFrontmatter(content) {
@@ -72,27 +73,26 @@ function categorizePost(post) {
 }
 
 function buildSidebar(posts, categoryPosts, currentPage = '') {
-  const categoryHtml = Object.entries(categoryPosts)
+  const topicItems = Object.entries(categoryPosts)
     .filter(([_, posts]) => posts.length > 0)
-    .map(([category, catPosts]) => `
-      <div class="sidebar-category">
-        <h4>${category}</h4>
-        <ul>
-          ${catPosts.slice(0, 5).map(p => `<li><a href="${currentPage}posts/${p.slug}.html">${p.title}</a></li>`).join('')}
-          ${catPosts.length > 5 ? `<li class="more">+${catPosts.length - 5} more</li>` : ''}
-        </ul>
-      </div>
-    `).join('');
+    .map(([category]) => {
+      const firstKeyword = CATEGORIES[category][0];
+      const tagSlug = slugifyTag(firstKeyword);
+      return `<a href="${currentPage}tags/${tagSlug}.html" class="topic-item">${category}</a>`;
+    })
+    .join('');
 
   return `
     <aside class="sidebar">
       <nav class="sidebar-nav">
-        <a href="${currentPage}about.html">About Me</a>
+        <a href="${currentPage}about.html">About</a>
         <a href="${currentPage}index.html">All Posts</a>
       </nav>
-      <div class="sidebar-categories">
+      <div class="sidebar-topics">
         <h3>Topics</h3>
-        ${categoryHtml}
+        <div class="topic-list">
+          ${topicItems}
+        </div>
       </div>
     </aside>
   `;
@@ -298,7 +298,7 @@ async function main() {
       .trim();
 
     const words = plainText.split(/\s+/);
-    const preview = words.slice(0, 50).join(' ') + (words.length > 50 ? '...' : '');
+    const preview = words.slice(0, 30).join(' ') + (words.length > 30 ? '...' : '');
 
     const post = {
       title: frontmatter.title || 'Untitled',

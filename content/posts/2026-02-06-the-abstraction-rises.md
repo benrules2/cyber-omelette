@@ -2,7 +2,7 @@
 title: "The Abstraction Rises"
 date: 2026-02-06
 slug: the-abstraction-rises
-tags: ["programming", "AI", "LLM", "history", "FORTRAN", "coding agents", "abstraction", "vibe coding"]
+tags: ["programming", "AI", "LLM", "history", "FORTRAN", "coding agents", "abstraction", "vibe coding", "opinion"]
 original_url: /2026/02/the-abstraction-rises.html
 ---
 
