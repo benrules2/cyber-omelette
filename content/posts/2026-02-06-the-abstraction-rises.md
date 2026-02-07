@@ -48,7 +48,7 @@ Programming languages were moving from esoteric holes in punch cards toward port
 
 Computer code was getting easier to write, and not everyone was impressed. In John Backus' own [reflections](https://softwarepreservation.computerhistory.org/FORTRAN/paper/Backus-ProgrammingInAmerica-1976.pdf), he describes:
 
-> *The Priesthood wanted and got simple mechanical aids for the clerical drudgery which burdened them*
+> *The Priesthood wanted and got simple mechanical aids for the clerical drudgery which burdened them, but they regarded with hostility and derision more ambitious plans to make programming accessible to a larger population.*
 
 The skeptics had economics on their side as well. Slowdown meant lost money, so Automatic Programming would have to match hand-coded efficiency to be adopted. There was a human component as well: programming was a hard-won skill, and implying it could be automated felt like an attack on the craft itself.
 
