@@ -36,7 +36,7 @@ As head of IBM's Programming Research Group, John Backus was seeking to vastly s
 
 In the [1956 Programmer's Reference Manual](https://archive.computerhistory.org/resources/text/Fortran/102649787.05.01.acc.pdf), Backus made a bold claim:
 
-> *Since FORTRAN should virtually eliminate coding and debugging, it should be possible to solve problems*
+> *Since FORTRAN should virtually eliminate coding and debugging, it should be possible to solve problems for less than half the cost that would be required without such a system.*
 
 In hindsight, this seems absurd. There's a saying that "[You can write FORTRAN in any language](https://web.archive.org/web/20050530074644/http://www.acmqueue.com/modules.php?name=Content&pa=showpage&pid=271)," a reminder that any language can produce buggy, illegible code. But compared to hand-coded assembly, FORTRAN delivered. Programs that previously required 1000 machine instructions could be written in [47 FORTRAN statements](https://www.ibm.com/history/fortran). GM's productivity studies showed FORTRAN reduced programming effort by [a factor of five to ten](https://www.ebsco.com/research-starters/history/ibm-develops-fortran-computer-language). This was significant progress.
 
